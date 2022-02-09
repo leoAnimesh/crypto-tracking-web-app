@@ -10,16 +10,14 @@ import {
 } from "./components";
 import "./styles/App.css";
 
-const { Sider, Content, Footer, Header } = Layout;
+const { Content } = Layout;
 
 const App = () => {
   return (
     <>
       <Navbar />
       <Layout>
-        <Content
-          style={{ padding: "0px", margin: " 20px 30px", minHeight: "100vh" }}
-        >
+        <Content style={{ padding: "0px", margin: " 20px 30px" }}>
           <Routes>
             <Route exact path="/" element={<HomePage />} />
             <Route path="/exchanges" element={<Exchanges />} />
